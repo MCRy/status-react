@@ -54,7 +54,7 @@
     "react-native-fs": "^1.5.1",
     "react-native-http": "github:tradle/react-native-http#834492d",
     "react-native-i18n": "0.0.8",
-    "react-native-image-crop-picker": "^0.9.4",
+    "react-native-image-crop-picker": "^0.36.0",
     "react-native-image-resizer": "github:danieldunderfelt/react-native-image-resizer",
     "react-native-invertible-scroll-view": "^1.0.0",
     "react-native-level-fs": "^2.0.1",
