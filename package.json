@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "postinstall": "./postinstall.sh"
+    "postinstall": "./postinstall.sh",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "rn-nodeify": "^6.0.1"
@@ -38,10 +40,10 @@
     "process": "^0.11.5",
     "punycode": "^1.4.1",
     "querystring-es3": "^0.2.1",
-    "re-natal": "0.2.38",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
-    "react-native": "^0.38.0",
+    "re-natal": "0.2.41",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-native": "^0.64.0",
     "react-native-action-button": "2.0.13",
     "react-native-android-sms-listener": "github:adrian-tiberius/react-native-android-sms-listener#listener-bugfix",
     "react-native-camera": "git+https://github.com/alwx/react-native-camera.git",
@@ -67,16 +69,17 @@
     "react-native-swiper": "1.5.3",
     "react-native-tcp": "^2.0.4",
     "react-native-udp": "^1.2.6",
-    "react-native-vector-icons": "^2.0.3",
+    "react-native-vector-icons": "^6.4.1",
     "react-native-webview-bridge": "github:status-im/react-native-webview-bridge#0.33.4",
     "readable-stream": "^1.0.33",
-    "realm": "^0.14.3",
+    "realm": "^0.15.0",
     "stream-browserify": "^1.0.0",
     "timers-browserify": "^1.4.2",
     "tty-browserify": "0.0.0",
     "url": "^0.10.3",
     "vm-browserify": "0.0.4",
-    "web3": "0.16.0"
+    "web3": "0.16.0",
+    "@snyk/protect": "latest"
   },
   "browser": {
     "crypto": "react-native-crypto",
@@ -127,5 +130,6 @@
     "tty": "tty-browserify",
     "vm": "vm-browserify",
     "net": "react-native-tcp"
-  }
+  },
+  "snyk": true
 }
